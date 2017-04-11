@@ -189,6 +189,11 @@ function startGame() {
 function gameOver(){
     console.log("Gameover function. Score= " + score + " high= " + highscore);
     console.log("game state = " + gameState);
+
+    // Update the leaderboard
+    fb_updateLeaderboard(score, true);
+    fb_updateGamesPlayed(score, true);
+
     if (score>highscore){highscore = score;}
     startButton.show();
     asteroids.removeSprites();
