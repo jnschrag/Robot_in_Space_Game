@@ -276,7 +276,7 @@ function fb_updateGamesPlayed(lives, freePlay) {
   }
   var gamesPlayedRef = firebase.database().ref("gamesPlayed");
   var newGamesPlayedRef = gamesPlayedRef.push();
-  newGamesPlayedRef.set({ 'uid': uid, 'name': displayName, 'timestamp': Date.now(), 'score': score, 'lives': lives, 'questionsCorrect': questionsCorrect, 'questionsIncorrect': questionsIncorrect, 'quiz': freePlay });
+  newGamesPlayedRef.set({ 'uid': uid, 'name': displayName, 'timestamp': Date.now(), 'score': score, 'lives': lives });
 }
 
 /*====================================================
