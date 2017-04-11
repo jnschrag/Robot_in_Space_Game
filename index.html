@@ -122,42 +122,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="container">
 
-    <!-- START: Display Leaderboard -->
-      <h2>Leaderboard</h2>
-      <div id="highestscore">
-        Overall High Score: <span class="highestScoreDiv"></span>
-      </div><br />
-      <table id="leaderboardTable" class="leaderboard"></table>
-      <a id="fullLeaderboardLink" href="#" data-toggle="modal" data-target="#leaderboard_modal">View Full Leaderboard</a><br /><br />
-    <!-- END: Display Leaderboard -->
-    <!-- START: Signed in User Message -->
-      <div id="welcomeMessage">
-        <span id="welcomeUser"></span>
-        
-        <div id="userInfo">
-          <span id="currentRanking"></span>
-          <span id="personalHighScore"></span>
-          <span id="livesEarnedContainer"></span>
+      <div class="row">
+
+        <div class="col-xs-12 col-md-9">
+          <section id="game-holder"></section>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+
+        <!-- START: Display Leaderboard -->
+          <h2>Leaderboard</h2>
+          <div id="highestscore">
+            Overall High Score: <span class="highestScoreDiv"></span>
+          </div><br />
+          <table id="leaderboardTable" class="leaderboard"></table>
+          <a id="fullLeaderboardLink" href="#" data-toggle="modal" data-target="#leaderboard_modal">View Full Leaderboard</a><br /><br />
+        <!-- END: Display Leaderboard -->
+        <!-- START: Signed in User Message -->
+          <div id="welcomeMessage">
+            <span id="welcomeUser"></span>
+            
+            <div id="userInfo">
+              <span id="currentRanking"></span>
+              <span id="personalHighScore"></span>
+              <span id="livesEarnedContainer"></span>
+            </div>
+          </div>
+          <a class="btn btn-primary sign-out">
+            Sign Out
+          </a>
+          <!-- END: Signed in User Message -->
+
+          <!-- START: Authentication Section -->
+          <section id="authentication">
+            <a class="btn btn-block btn-social btn-twitter">
+              <span class="fa fa-twitter"></span> Sign in with Twitter
+            </a>
+            <a class="btn btn-block btn-social btn-facebook">
+              <span class="fa fa-facebook"></span> Sign in with Facebook
+            </a>
+            <a class="btn btn-block btn-social btn-google">
+              <span class="fa fa-google"></span> Sign in with Google
+            </a>
+          </section>
+          <!-- END: Authentication Section -->
         </div>
       </div>
-      <a class="btn btn-primary sign-out">
-        Sign Out
-      </a>
-      <!-- END: Signed in User Message -->
-
-      <!-- START: Authentication Section -->
-      <section id="authentication">
-        <a class="btn btn-block btn-social btn-twitter">
-          <span class="fa fa-twitter"></span> Sign in with Twitter
-        </a>
-        <a class="btn btn-block btn-social btn-facebook">
-          <span class="fa fa-facebook"></span> Sign in with Facebook
-        </a>
-        <a class="btn btn-block btn-social btn-google">
-          <span class="fa fa-google"></span> Sign in with Google
-        </a>
-      </section>
-      <!-- END: Authentication Section -->
 
     </div>
 

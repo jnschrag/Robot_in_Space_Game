@@ -11,6 +11,12 @@ canvas {vertical-align: top;}
   border-bottom:1px solid #ccc;
 }
 
+.game-canvas {
+  width:100% !important;
+  height:100% !important;
+  max-height:500px;
+}
+
 /*
  * Social Buttons for Bootstrap
  *

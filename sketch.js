@@ -31,7 +31,10 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(800,600);
+  var canvas = createCanvas(800,500);
+  // Move Canvas to game-holder section, set the game-canvas class for styling
+  canvas.parent("game-holder");
+  canvas.addClass("game-canvas");
   score = 0;
   highscore = 0;
   gameState = 0;
